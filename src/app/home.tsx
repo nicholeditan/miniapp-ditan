@@ -7,8 +7,7 @@ import { currentUser } from '@/lib/user';
 export default function HomeScreen() {
     const [search, setSearch] = useState('');
 
-    // Keep only the items whose name has the search text (small letters, so 
-case does not matter)
+    /*Keep only the items whose name has the search text (small letters, so case does not matter)*/
     const shown = ITEMS.filter((item) =>
          item.name.toLowerCase().includes(search.trim().toLowerCase())
   );

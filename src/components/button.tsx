@@ -13,8 +13,7 @@ export function Button({ label, onPress, outline = false }: Props) {
         onPress={onPress}
         className={outline ? 'rounded-xl border-2 border-brand p-4' : 'rounded - xl bg-brand p-4'}
     >
-        <Text className={outline ? 'text-center font-bold text-brand' : 'text
-center font-bold text-white'}>
+        <Text className={outline ? 'text-center font-bold text-brand' : 'text-center font-bold text-white'}>
 {label}
 </Text>
 </Pressable>
